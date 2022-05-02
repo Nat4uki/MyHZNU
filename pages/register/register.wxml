@@ -1,0 +1,21 @@
+<view class="page">
+    <view style="text-align: center;justify-content:center;display:flex;align-items:center;margin:40rpx 0rpx 70rpx 0rpx;">
+        <image class="image" src="../../images/8-01.png"></image>
+    </view>
+    <form bindsubmit="registerSuccess">
+        <view class="text">输入您的姓名</view>
+        <view class="inputFrame">
+            <input name="realName" placeholder="姓名" placeholderStyle="font-size:35rpx;"></input>
+        </view>
+        <view class="text">输入您班级的名称</view>
+        <view class="inputFrame">
+            <input name="className" placeholder="班级" placeholderStyle="font-size:35rpx;"></input>
+        </view>
+        <view class="text">输入您的学号</view>
+        <view class="inputFrame">
+            <input name="studentId" placeholder="学号" placeholderStyle="font-size:35rpx;" type="number"></input>
+        </view>
+        <button class="ensure" formType="submit">确定</button>
+        <view class="tip">一经确认不可修改</view>
+    </form>
+</view>

@@ -1,0 +1,95 @@
+<view class="page">
+    <view class="loading_box" wx:if="{{loading}}">
+        <view class="loading3 loading3_1"></view>
+        <view class="loading3 loading3_2"></view>
+        <view class="loading3 loading3_3"></view>
+    </view>
+    <view class="grayLine"></view>
+    <view class="ranking" wx:for="{{ranking_list}}" wx:key="test">
+        <view class="item1" wx:if="{{index==0}}">
+            <image class="xueBaIcon" src="../../images/C_16.png"></image>
+            <view class="left">
+                <view class="left_left1">
+          {{item.rank}}
+        </view>
+            </view>
+            <view class="middle">
+                <view class="middle_top">
+          {{item.realName}}
+        </view>
+                <view class="middle_bottom">
+          {{item.className}}
+        </view>
+            </view>
+            <view class="right">
+                <view class="score">
+          {{item.score}}
+        </view>
+            </view>
+        </view>
+        <view class="item2" wx:if="{{index==1}}">
+            <view class="left">
+                <view class="left_left2">
+          {{item.rank}}
+        </view>
+            </view>
+            <view class="middle">
+                <view class="middle_top">
+          {{item.realName}}
+        </view>
+                <view class="middle_bottom">
+          {{item.className}}
+        </view>
+            </view>
+            <view class="right">
+                <view class="score">
+          {{item.score}}
+        </view>
+            </view>
+        </view>
+        <view class="item3" wx:if="{{index==2}}">
+            <view class="left">
+                <view class="left_left3">
+          {{item.rank}}
+        </view>
+            </view>
+            <view class="middle">
+                <view class="middle_top">
+          {{item.realName}}
+        </view>
+                <view class="middle_bottom">
+          {{item.className}}
+        </view>
+            </view>
+            <view class="right">
+                <view class="score">
+          {{item.score}}
+        </view>
+            </view>
+        </view>
+        <view class="item4" wx:if="{{index>2}}">
+            <view class="left">
+                <view class="left_left4">
+          {{item.rank}}
+        </view>
+            </view>
+            <view class="middle">
+                <view class="middle_top">
+          {{item.realName}}
+        </view>
+                <view class="middle_bottom">
+          {{item.className}}
+        </view>
+            </view>
+            <view class="right">
+                <view class="score">
+          {{item.score}}
+        </view>
+            </view>
+        </view>
+    </view>
+    <view class="title">
+        <text>
+按照有效积分高低排名。</text>
+    </view>
+</view>
